@@ -32,11 +32,11 @@ body {
   color: var(--main-color);
   scroll-behavior: smooth;
   animation: transitionIn 0.75s;
-  cursor: url(assets/svg/cat-favicon.svg), auto;  
+  cursor: url("./assets/svg/cat.svg"), auto;  
 }
 
 #loader {
-  background-image: url("assets/svg/cat.svg");
+  background-image: url("./assets/svg/cat.svg");
   background-size: cover;
   width: 100px;
   height: 100px;
