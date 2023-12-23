@@ -1,2 +1,2 @@
-# sabinanuhanovic.github.io
+# sabinanuhanovic
 Personal website.
