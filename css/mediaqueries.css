@@ -1,0 +1,141 @@
+@media screen and (max-width: 900px) {
+    .home-section, 
+    .about-section,
+    .wraper,
+    .contact-section {
+        padding: 50px 50px;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+      
+    #hamburger-nav {
+        display: flex;
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        border-bottom: 1px solid black;
+        border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+        text-align: center;
+    }
+
+    #img-container {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        margin: auto 0;
+    }
+    
+    .profile-img img{
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 100%;
+        padding: 0.5rem;
+    }
+    
+    .info-title {
+        font-size: 42px;
+    }
+    
+    .info-text {
+        font-size: 22px;
+    }
+
+    .socials-container {
+        justify-content: center;
+    }
+
+    /* ==== ABOUT SECTION ==== */ 
+
+    #about p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* ==== PROJECTS SECTION ==== */
+
+    .projects {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 50px;
+        justify-content: center;
+    }
+   
+    /* ==== CONTACT SECTION ==== */
+
+    .contact-section {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo p {
+        font-size: 30px;
+    }
+
+    /* ==== HOME ====*/
+
+    .info-title {
+        width: 300px;
+    }
+
+    .info-text {
+        width: 300px;
+        font-weight: 400;
+        color: var(--color);
+    }
+
+    .socials-container {
+        justify-content: center;
+    }
+
+    /* ==== PROJECTS SECTION ==== */
+
+    .btn-section {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* ==== CONTACT SECTION ==== */
+
+    .contact-section > div {
+        margin: 10px 0;
+    }
+
+    .contact-section {
+        padding-bottom: 0;
+    }
+
+    .text-one {
+        font-size: 18px;
+    }
+ 
+    /* ==== BTNS FOOTER  ==== */
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns button {
+        width: 100%;
+    }
+
+    .btns button:first-child {
+        margin-bottom: 10px;
+    }
+}
