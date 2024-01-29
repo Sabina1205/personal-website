@@ -1,135 +1,197 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sabina Nuhanovic | Frontend Developer</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/mediaqueries.css'>
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
-    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon.png">
-    <script src='./js/script.js' defer></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/mediaqueries.css"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/favicon/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon/favicon.png"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
     <div id="loader" class="center"></div>
     <nav id="desktop-nav">
-        <div class="logo">SN</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="logo">SN</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <nav id="hamburger-nav">
-        <div class="logo">SN</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links closed">
-            <li><a href="#about" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
+      <div class="logo">SN</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links closed">
+          <li><a href="#about" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <div class="home-section" id="home">
-        <div class="profile-img">
-            <img src="assets/images/profile-pic.png" alt="profile">
+      <div class="profile-img">
+        <img src="assets/images/profile-pic.png" alt="profile" />
+      </div>
+      <div class="info">
+        <div class="information">
+          <h1 class="info-title">Sabina Nuhanovic</h1>
+          <p class="info-text">Frontend Developer</p>
         </div>
-        <div class="info">
-            <div class="information">
-                <h1 class="info-title">Sabina Nuhanovic</h1>
-                <p class="info-text">Frontend Developer</p>
-            </div>
-            <div class="socials-container">
-                <img src="./assets/images/github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/Sabina1205')">
-                <img src="./assets/images/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')">
-            </div>
+        <div class="socials-container">
+          <img
+            src="./assets/images/github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="window.open('https://github.com/Sabina1205')"
+          />
+          <img
+            src="./assets/images/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')"
+          />
         </div>
+      </div>
     </div>
     <div class="about-section" id="about">
+      <div class="section-header">
         <h2 class="about-title">About</h2>
-      	<p>
-            <span id="line"></span> I’m Sabina, a frontend developer with Bachelor degree in Information Technology and with the ability to learn and collaborate in changing environments. At the moment, 
-            I am expanding my knowledge in the design world, studying the process before actual coding, and researching more about Cybersecurity. 
-            In the past few years, I have gained a certain amount of experience in different areas in Web development.
-            I am seeking to combine gathered information, skills, and knowledge  together and utilize it on improving future projects, 
-            as well as to contribute to successful projects in the near future.
-            I am eager to learn and constantly motivated to do so.
+      </div>
+      <div class="section-paragraph">
+        <p>
+          <span id="line"></span> I’m Sabina, a frontend developer with Bachelor
+          degree in Information Technology and with the ability to learn and
+          collaborate in changing environments. At the moment, I am expanding my
+          knowledge in the design world, studying the process before actual
+          coding, and researching more about Cybersecurity. In the past few
+          years, I have gained a certain amount of experience in different areas
+          in Web development. I am seeking to combine gathered information,
+          skills, and knowledge together and utilize it on improving projects,
+          as well as to contribute to successful projects in the near future. I
+          am eager to learn and constantly motivated to do so.
         </p>
         <p><b>Interests:</b> UI Design, Cybersecurity, IT Support</p>
-        <p><b>Key skills:</b> HTML, CSS, JavaScript, WordPress, Foundation CSS, SASS, UI Design, Graphic Design, Logo Design</p>
+        <p>
+          <b>Key skills:</b> HTML, CSS, JavaScript, WordPress, Foundation CSS,
+          SASS, UI Design, Graphic Design, Logo Design
+        </p>
+      </div>
     </div>
     <div class="wraper">
+      <div class="section-header">
         <h2 class="project-title">Projects</h2>
-        <div class="projects" id="projects">
-            <div class="project">
-                <figure>
-                    <img src="./assets/images/thumbnail.jpg" />
-                </figure>
-                <h2>Thumbnail gallery</h2>
-                <p class="description">
-                    Thumbnail gallery created with HTML, CSS and JavaScript.
-                </p>
-                <button class="btn-git" onclick="window.open('https://github.com/Sabina1205/Thumbnail-gallery')">
-                    Source code &#10230;
-                </button>
-            </div>
-            <div class="project">
-                <figure>
-                    <img src="./assets/images/drum.jpg" />
-                </figure>
-                <h2>Drum machine</h2>
-                <p class="description">
-                    Drum machine was build with Bootstrap and Javascript. This project was created as part of the FreeCodeCamp course Front End Development Libraries. 
-                </p>
-                <button class="btn-git" onclick="window.open('https://github.com/Sabina1205/Drum-machine')">
-                    Source code &#10230;
-                </button>
-            </div>
-            <div class="project">
-                <figure>
-                    <img src="./assets/images/form-php.jpg" />
-                </figure>
-                <h2>Contact form</h2>
-                <p class="description">
-                    Contact form for sending emails via PHP code with open-source PHP library.
-                </p>
-                <button class="btn-git" onclick="window.open('https://github.com/Sabina1205/Send-email-with-php/tree/master')">
-                    Source code &#10230;
-                </button>
-            </div>
+      </div>
+      <div class="projects" id="projects">
+        <div class="project">
+          <figure>
+            <img src="./assets/images/thumbnail.jpg" />
+          </figure>
+          <h2>Thumbnail gallery</h2>
+          <p class="description">
+            Thumbnail gallery created with HTML, CSS and JavaScript.
+          </p>
+          <button
+            class="btn-git"
+            onclick="window.open('https://github.com/Sabina1205/Thumbnail-gallery')"
+          >
+            Source code &#10230;
+          </button>
         </div>
-        <div class="btn-section">
-            <button class="btn" onclick="window.open('https://github.com/Sabina1205?tab=repositories')">Show more &#10230;</button>
+        <div class="project">
+          <figure>
+            <img src="./assets/images/drum.jpg" />
+          </figure>
+          <h2>Drum machine</h2>
+          <p class="description">
+            Drum machine was build with Bootstrap and Javascript. This project
+            was created as part of the FreeCodeCamp course Front End Development
+            Libraries.
+          </p>
+          <button
+            class="btn-git"
+            onclick="window.open('https://github.com/Sabina1205/Drum-machine')"
+          >
+            Source code &#10230;
+          </button>
         </div>
+        <div class="project">
+          <figure>
+            <img src="./assets/images/form-php.jpg" />
+          </figure>
+          <h2>Contact form</h2>
+          <p class="description">
+            Contact form for sending emails via PHP code with open-source PHP
+            library.
+          </p>
+          <button
+            class="btn-git"
+            onclick="window.open('https://github.com/Sabina1205/Send-email-with-php/tree/master')"
+          >
+            Source code &#10230;
+          </button>
+        </div>
+      </div>
+      <div class="btn-section">
+        <button
+          class="btn"
+          onclick="window.open('https://github.com/Sabina1205?tab=repositories')"
+        >
+          Show more &#10230;
+        </button>
+      </div>
     </div>
     <div class="contact-section">
-        <div class="footer-heading">
-            <h1>Thanks for stopping by!</h1>
-        </div>
-        <div class="text-one">
-            <p>Feel free to contact me:</p>
-        </div>
-        <div class="text-two">
-            <p>sabina.nuhanovic@outlook.com</p>
-        </div>
-        <div class="btns">
-            <button onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')">LinkedIn</button>
-            <button onclick="window.open('assets/sn-resume.pdf')">Resume</button>
-        </div>
-        <div class="text-three">
-            <p>© 2023 by Sabina Nuhanovic</p>
-        </div>
+      <div class="footer-heading">
+        <h1>Thanks for stopping by!</h1>
+      </div>
+      <div class="text-one">
+        <p>Feel free to contact me:</p>
+      </div>
+      <div class="text-two">
+        <p>sabina.nuhanovic@outlook.com</p>
+      </div>
+      <div class="btns">
+        <button
+          onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')"
+        >
+          LinkedIn
+        </button>
+        <button onclick="window.open('assets/sn-resume.pdf')">Resume</button>
+      </div>
+      <div class="text-three">
+        <p>© 2023 by Sabina Nuhanovic</p>
+      </div>
     </div>
     <a href="#" class="top">Back to Top &#8593;</a>
-</body>
+  </body>
 </html>
