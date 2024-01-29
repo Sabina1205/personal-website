@@ -1,18 +1,18 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
 
 document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loader").style.visibility = "visible";
-    } else {
-        document.querySelector("#loader").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
-    }
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#loader").style.visibility = "visible";
+  } else {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
 };
 
 const projects = [
@@ -38,15 +38,15 @@ const projects = [
       "https://github.com/Sabina1205/Frontend-mentor-challenges-3/tree/main/ip-address-tracker-master",
   },
   {
-    image: "./assets/images/php-form.jpg",
-    header: "PHP Form",
+    image: "./assets/images/form-php.jpg",
+    header: "PHP form",
     description:
       "Contact form for sending emails via PHP code with open-source PHP library.",
     buttonLink: "https://github.com/Sabina1205/Send-email-with-php",
   },
   {
     image: "./assets/images/results-component.jpg",
-    header: "Results summary component",
+    header: "Results summary",
     description:
       "Results summary component created with HTML, CSS, JavaScript and JSON.",
     buttonLink:
@@ -57,7 +57,7 @@ const projects = [
     header: "Drum machine",
     description: "Drum machine created with Bootstrap and JavaScript.",
     buttonLink: "https://github.com/Sabina1205/Drum-machine",
-  }
+  },
 ];
 
 // selecting containers for projects
