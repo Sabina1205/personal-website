@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Plaster&family=Playfair+Display&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Plaster&family=Playfair+Display&family=Poppins&display=swap");
 
 :root {
   --bg-color: #fdfdfd;
-  --main-color: #303030; 
+  --main-color: #303030;
   --gray-buttons: #616467;
-  --lightgray: #D3D3D3;
-   
+  --lightgray: #d3d3d3;
+
   --secondary-color: #000;
 
-  --info-title: 'Playfair Display'; 
-  --info-text: 'Inconsolata'; 
-  --body-font: 'Poppins', sans-serif;
-  --logo-font: 'Plaster';
+  --info-title: "Playfair Display";
+  --info-text: "Inconsolata";
+  --body-font: "Poppins", sans-serif;
+  --logo-font: "Plaster";
 
   --title-size: 52px;
   --info-title-size: 32px;
@@ -32,11 +32,11 @@ body {
   color: var(--main-color);
   scroll-behavior: smooth;
   animation: transitionIn 0.75s;
-  cursor: url(assets/svg/cat.svg), auto;  
+  cursor: url(assets/svg/cat.svg), auto;
 }
 
 #loader {
-  background-image: url("./assets/svg/cat.svg");
+  background-image: url("assets/svg/cat.svg");
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -52,14 +52,14 @@ body {
   margin: auto;
 }
 
-.home-section, 
+.home-section,
 .about-section,
 .wraper,
 .contact-section {
   padding: 100px;
 }
 
-/* ==== DESKTOP NAV ==== */
+/* DESKTOP NAV */
 
 .logo {
   font-family: var(--logo-font);
@@ -76,7 +76,12 @@ nav {
   height: 12vh;
   padding: 0 100px;
   border-bottom: 1px solid var(--main-color);
-  border-image: linear-gradient(to left, var(--secondary-color) 50%, transparent 50%) 100% 1;
+  border-image: linear-gradient(
+      to left,
+      var(--secondary-color) 50%,
+      transparent 50%
+    )
+    100% 1;
 }
 
 .nav-links {
@@ -100,12 +105,12 @@ a {
 #hamburger-nav {
   display: none;
 }
-  
+
 .hamburger-menu {
   position: relative;
   display: inline-block;
 }
-  
+
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -114,7 +119,7 @@ a {
   width: 30px;
   cursor: pointer;
 }
-  
+
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -191,7 +196,12 @@ a {
   align-items: center;
   height: auto;
   border-bottom: 1px solid var(--secondary-color);
-  border-image: linear-gradient(to right, var(--secondary-color) 50%, transparent 50%) 100% 1;
+  border-image: linear-gradient(
+      to right,
+      var(--secondary-color) 50%,
+      transparent 50%
+    )
+    100% 1;
   transition: ease-in-out;
 }
 
@@ -245,21 +255,19 @@ a {
 #about {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   height: fit-content;
   border-bottom: 1px solid var(--secondary-color);
-  border-image: linear-gradient(to left, var(--secondary-color) 50%, transparent 50%) 100% 1;
+  border-image: linear-gradient(
+      to left,
+      var(--secondary-color) 50%,
+      transparent 50%
+    )
+    100% 1;
 }
 
 #about p {
   font-size: 20px;
-  text-align: justify;
-}
-
-.about-title,
-.project-title {
-  margin-bottom: 20px;
 }
 
 #line {
@@ -276,7 +284,12 @@ a {
 .wraper {
   width: auto;
   border-bottom: 1px solid var(--secondary-color);
-  border-image: linear-gradient(to right, var(--secondary-color) 50%, transparent 50%) 100% 1;
+  border-image: linear-gradient(
+      to right,
+      var(--secondary-color) 50%,
+      transparent 50%
+    )
+    100% 1;
 }
 
 .projects {
@@ -286,17 +299,20 @@ a {
   justify-content: center;
 }
 
-.project {
-  position: relative;
-  margin-top: 20px;
-  border: 1px solid var(--main-color);
+.section-header {
+  margin-bottom: 40px;
 }
 
 .project-title {
   text-align: right;
 }
 
-.project h2, 
+.project {
+  position: relative;
+  border: 1px solid var(--main-color);
+}
+
+.project h2,
 .description {
   padding: 20px;
 }
@@ -318,7 +334,7 @@ figure img {
   border: 1px solid var(--main-color);
   color: var(--main-color);
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   position: absolute;
   bottom: 0;
 }
@@ -346,13 +362,13 @@ figure img {
   cursor: pointer;
 }
 
-.btn:hover, 
+.btn:hover,
 .btn a:hover {
   color: var(--bg-color);
   background-color: var(--main-color);
 
   transform: translateX(10px);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 /* CONTACT SECTION */
@@ -398,7 +414,7 @@ figure img {
   font-size: 14px;
   line-height: 1;
   transition-property: background-color, border-color, color, box-shadow, filter;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   border: 1px solid transparent;
   letter-spacing: 2px;
   min-width: 160px;
