@@ -4,6 +4,12 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+});
+
+/*
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
@@ -13,12 +19,6 @@ document.onreadystatechange = function () {
     document.querySelector("body").style.visibility = "visible";
   }
 };
-
-
-/*
-window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
-});
 */
 const projects = [
   {
