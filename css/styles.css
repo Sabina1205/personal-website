@@ -26,7 +26,7 @@
 }
 
 html {
-    cursor: url(/assets/svg/cat.svg), auto;
+    cursor: url('../assets/svg/cat.svg'), auto;
 }
 body {
   font-family: var(--body-font);
@@ -38,7 +38,7 @@ body {
 }
 
 #loader {
-  background-image: url('../assets/svg/cat.svg'), auto;
+  background-image: url('../assets/svg/cat.svg');
   background-size: cover;
   width: 100px;
   height: 100px;
