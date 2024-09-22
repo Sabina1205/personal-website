@@ -37,16 +37,6 @@ body {
   scroll-behavior: smooth;
   animation: transitionIn 0.75s;
 }
-/* Initial state for the body (hidden) */
-body.loading {
-  visibility: hidden;
-  overflow: hidden;
-}
-
-/* Loader styles */
-#loader {
-  display: block; /* Make sure the loader is visible initially */
-}
 
 #loader {
   background-image: url('../assets/svg/cat.svg');
