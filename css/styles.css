@@ -28,6 +28,7 @@
 html {
     cursor: url('../assets/svg/cat.svg'), auto;
 }
+
 body {
   font-family: var(--body-font);
   line-height: 1.54;
@@ -35,6 +36,16 @@ body {
   color: var(--main-color);
   scroll-behavior: smooth;
   animation: transitionIn 0.75s;
+}
+/* Initial state for the body (hidden) */
+body.loading {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Loader styles */
+#loader {
+  display: block; /* Make sure the loader is visible initially */
 }
 
 #loader {
