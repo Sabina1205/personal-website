@@ -7,6 +7,17 @@ function toggleMenu() {
 
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
+    document.querySelector("body").style.display = "none";
+    document.querySelector("#loader").style.display = "block";
+  } else {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("body").style.display = "block";
+  }
+};
+
+/* 
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
     document.querySelector("#loader").style.visibility = "visible";
   } else {
@@ -14,6 +25,7 @@ document.onreadystatechange = function () {
     document.querySelector("body").style.visibility = "visible";
   }
 };
+*/
 
 const projects = [
   {
