@@ -5,16 +5,21 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.display = "none";
-    document.querySelector("#loader").style.display = "block";
-  } else {
-    document.querySelector("#loader").style.display = "none";
-    document.querySelector("body").style.display = "block";
-  }
-};
 
+document.addEventListener("DOMContentLoaded", function() {
+  const loader = document.querySelector("#loader");
+  const body = document.querySelector("body");
+
+  // Initially show the loader and hide the body
+  loader.style.display = "block";
+  body.style.display = "none";
+
+  // When all resources are loaded
+  window.onload = function() {
+    loader.style.display = "none";
+    body.style.display = "block";
+  };
+});
 /* 
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
