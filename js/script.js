@@ -5,21 +5,18 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const loader = document.querySelector("#loader");
+document.onreadystatechange = function () {
   const body = document.querySelector("body");
+  const loader = document.querySelector("#loader");
 
-  // Initially show the loader and hide the body
-  loader.style.display = "block";
-  body.style.display = "none";
-
-  // When all resources are loaded
-  window.onload = function() {
+  if (document.readyState !== "complete") {
+    loader.style.display = "block";
+    body.style.display = "none";
+  } else {
     loader.style.display = "none";
     body.style.display = "block";
-  };
-});
+  }
+};
 /* 
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
