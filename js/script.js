@@ -5,18 +5,16 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-document.onreadystatechange = function () {
-  const body = document.querySelector("body");
+document.addEventListener("DOMContentLoaded", function () {
   const loader = document.querySelector("#loader");
+  const body = document.querySelector("body");
 
-  if (document.readyState !== "complete") {
-    loader.style.display = "block";
-    body.style.display = "none";
-  } else {
-    loader.style.display = "none";
-    body.style.display = "block";
-  }
-};
+  // Keep loader visible and body hidden until fully loaded
+  window.onload = function () {
+    loader.style.display = "none";   // Hide loader when page is fully loaded
+    body.classList.remove("loading"); // Show body
+  };
+});
 /* 
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
