@@ -1,3 +1,8 @@
+:root {
+    --info-title-mobile: 1rem;
+    --info-text-mobile: 22px;
+}
+
 @media screen and (max-width: 900px) {
     .home-section, 
     .about-section,
@@ -43,14 +48,13 @@
         padding: 0.5rem;
     }
     
-    .info-title {
-        font-size: 42px;
-    }
-    
-    .info-text {
-        font-size: 22px;
-    }
+     .info-title {
+    font-size: var(--info-title-mobile);
+  }
 
+     .info-text {
+    font-size: var(--info-text-mobile);
+  }
     .socials-container {
         justify-content: center;
     }
