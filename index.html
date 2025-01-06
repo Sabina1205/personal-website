@@ -30,87 +30,57 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <div id="loader" class="center"></div>
-    <nav id="desktop-nav">
-      <div class="logo">SN</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">SN</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">sn.</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links closed">
-          <li><a href="#about" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">sn.</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overflow">
+            <div class="menu-links closed">
+              <li><a href="#about" onclick="toggleMenu()">Home</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+          </div>
+          
         </div>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="title">
+        <h1>FRONTEND DEVELOPER</h1>
       </div>
-    </nav>
-    <div class="home-section" id="home">
-      <div class="profile-img">
-        <img src="assets/images/profile-pic.png" alt="profile" />
+
+      <div class="about" id="about">
+        <p>Hello! I’m Sabina, results-driven IT Engineer and Frontend Developer with a strong foundation in web technologies and a track record of 
+          adapting to new challenges. Skilled in creating responsive websites, maintaining IT systems, and implementing scalable solutions. 
+          Looking for opportunities to contribute and grow as a frontend developer in a dynamic team environment.</p>
+
+          <div class="btn-socials">
+            <button onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')">LinkedIn &#8599;</button>
+            <button onclick="window.open('https://github.com/Sabina1205')">GitHub &#8599;</button>
+          </div>
       </div>
-      <div class="info">
-        <div class="information">
-          <h1 class="info-title">Sabina Nuhanovic</h1>
-          <p class="info-text">Frontend Developer</p>
-        </div>
-        <div class="socials-container">
-          <img
-            src="./assets/images/github.png"
-            alt="GitHub"
-            class="icon"
-            onclick="window.open('https://github.com/Sabina1205')"
-          />
-          <img
-            src="./assets/images/linkedin.png"
-            alt="LinkedIn"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/sabina-nuhanovic-5178a4239/')"
-          />
-        </div>
       </div>
-    </div>
-    <div class="about-section" id="about">
-      <div class="section-header">
-        <h2 class="about-title">About</h2>
-      </div>
-      <div class="section-paragraph">
-        <p>
-          <span id="line"></span> I’m Sabina, a frontend developer with Bachelor
-          degree in Information Technology and with the ability to learn and
-          collaborate in changing environments. At the moment, I am expanding my
-          knowledge in the design world, studying the process before actual
-          coding, and researching more about Cybersecurity. In the past few
-          years, I have gained a certain amount of experience in different areas
-          in Web development. I am seeking to combine gathered information,
-          skills, and knowledge together and utilize it on improving projects,
-          as well as to contribute to successful projects in the near future. I
-          am eager to learn and constantly motivated to do so.
-        </p>
-        <p><b>Interests:</b> UI Design, Cybersecurity, IT Support</p>
-        <p>
-          <b>Key skills:</b> HTML, CSS, JavaScript, WordPress, Foundation CSS,
-          SASS, UI Design, Graphic Design, Logo Design
-        </p>
-      </div>
-    </div>
-    <div class="wraper">
-      <div class="section-header">
-        <h2 class="project-title">Projects</h2>
-      </div>
+    </section>
+
+    <section class="wrapper">
+      <h2 class="project-title">Projects</h2>
+
       <div class="projects" id="projects"></div>
       <div class="btn-section">
         <button
@@ -120,8 +90,9 @@
           Show more &#10230;
         </button>
       </div>
-    </div>
-    <div class="contact-section" id="contact">
+    </section>
+    <!-- FOOTER -->
+    <footer class="contact-section">
       <div class="footer-heading">
         <h1>Thanks for stopping by!</h1>
       </div>
@@ -142,7 +113,7 @@
       <div class="text-three">
         <p>© 2023 by Sabina Nuhanovic</p>
       </div>
-    </div>
-    <a href="#" class="top">Back to Top &#8593;</a>
+    </footer>
+    <a href="#" class="top">&#8593;</a>
   </body>
 </html>
