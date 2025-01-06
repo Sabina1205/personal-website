@@ -5,28 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.querySelector("#loader");
-  const body = document.querySelector("body");
-
-  // Keep loader visible and body hidden until fully loaded
-  window.onload = function () {
-    loader.style.display = "none";   // Hide loader when page is fully loaded
-    body.classList.remove("loading"); // Show body
-  };
-});
-/* 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector("#loader").style.visibility = "visible";
-  } else {
-    document.querySelector("#loader").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
-  }
-};
-*/
-
 const projects = [
   {
     image: "./assets/images/accordion.jpg",
