@@ -212,12 +212,12 @@ a {
 .btn-socials button {
   font-size: 20px;
   font-family: var(--info-title);
+  color: var(--main-color);
   text-transform: uppercase;
   border: none;
   background-color: transparent;
   padding: 8px;
   cursor: pointer;
-  text-decoration: none;
 }
 /* PROJECTS */
 
