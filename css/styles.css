@@ -213,6 +213,7 @@ a {
   font-size: 20px;
   font-family: var(--info-title);
   color: var(--main-color);
+  text-decoration: none;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
