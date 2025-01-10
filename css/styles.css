@@ -33,7 +33,7 @@ body {
   line-height: 1.54;
   background-color: var(--bg-color);
   color: var(--main-color);
-  cursor: url(/assets/svg/cat.svg), auto;
+  cursor: url(/assets/svg/cat.svg), auto !important;
 }
 
 section,
