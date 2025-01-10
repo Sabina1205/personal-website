@@ -40,15 +40,20 @@
   .contact-section {
     padding-bottom: 0;
   }
+  .top {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   #logo p {
     font-size: 30px;
   }
+
   .home {
     gap: 10px;
   }
+
   .title h1 {
     font-size: 32px;
   }
@@ -89,6 +94,6 @@
   }
 
   .top {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
