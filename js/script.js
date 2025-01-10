@@ -5,6 +5,11 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+document.querySelector(".top").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 const projects = [
   {
     image: "./assets/images/accordion.jpg",
